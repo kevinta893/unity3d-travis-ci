@@ -1,6 +1,6 @@
 #! /bin/sh
 
-PROJECT_PATH=$(pwd)/Unity+KinectV2+OpenCV3
+PROJECT_PATH=$(pwd)/$UNITY_PROJECT_PATH
 UNITY_BUILD_DIR=$(pwd)/Build
 LOG_FILE=$UNITY_BUILD_DIR/unity-win.log
 

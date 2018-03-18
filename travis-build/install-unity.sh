@@ -1,12 +1,7 @@
 #! /bin/sh
 
-
-
-
-
 # See $BASE_URL/$HASH/unity-$VERSION-$PLATFORM.ini for complete list
 # of available packages, where PLATFORM is `osx` or `win`
-UNITY_DOWNLOAD_CACHE=$(pwd)/unity_download_cache
 BASE_URL=https://beta.unity3d.com/download/46dda1414e51
 VERSION=2017.2.0f3
 
