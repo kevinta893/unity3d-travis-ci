@@ -12,7 +12,7 @@ I recommend reading a more detailed explaination on how to do this through this 
 
 Do configure the `.travis.yml` file to your needs:
 
-* TRAVIS_TAG - the GitHub release tag to deploy
+* TRAVIS_TAG - the GitHub release tag to deploy, if a release already exists with the same tag the release ZIP folder will be replaced
 * UNITY_PROJECT_NAME - the name of the release, the ZIP folder will be named ```$UNITY_PROJECT_NAME-v$TRAVIS_TAG```
 
 ## Other notes
