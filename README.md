@@ -1,5 +1,5 @@
 # unity3d-travis-ci
-[![Build Status](https://travis-ci.org/kevinta893/unity3d-travis-ci.svg?branch=master)](https://travis-ci.org/kevinta893/unity3d-travis-ci)
+[![Build Status](https://travis-ci.org/kevinta893/unity3d-travis-ci.svg?branch=2017.2.0f3)](https://travis-ci.org/kevinta893/unity3d-travis-ci)
 [![unity version](https://img.shields.io/badge/unity%20version-2017.2.0f3-green.svg)]()
 
 A simple example on how to use Travis-CI to build, test, and deploy a Unity Package to a Github Release. The example Unity Package is a scene with a cube bouncing. 
@@ -20,7 +20,7 @@ Do configure the `.travis.yml` file to your needs:
 To choose a different Unity version to compile with, first visit the [Unity Download Archive](https://unity3d.com/get-unity/download/archive) and get the download URL for the following:
 
 * The **Unity Editor** (not installer) Mac OS package
-* The **Windows Target Support" Mac OS package (click on Release Notes for a list of links)
+* The **Windows Target Support** Mac OS package (click on Release Notes for a list of links)
 
 Then go to **travis-build\install_unity.sh** and add these URLs to the respective enviroment variables: `UNITY_OSX_PACKAGE_URL` and `UNITY_WINDOWS_TARGET_PACKAGE_URL`
 
