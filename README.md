@@ -20,7 +20,7 @@ Do configure the `.travis.yml` file to your needs:
 To choose a different Unity version to compile with, first visit the [Unity Download Archive](https://unity3d.com/get-unity/download/archive) and get the download URL for the following:
 
 * The **Unity Editor** (not installer) Mac OS package
-* The **Windows Target Support" Mac OS package (click on Release Notes for a list of links)
+* The **Windows Target Support** Mac OS package (click on Release Notes for a list of links)
 
 Then go to **travis-build\install_unity.sh** and add these URLs to the respective enviroment variables: `UNITY_OSX_PACKAGE_URL` and `UNITY_WINDOWS_TARGET_PACKAGE_URL`
 
