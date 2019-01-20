@@ -13,6 +13,7 @@ cache:
 
     
 before_install:
+- gpg --keyserver hkp://keys.gnupg.net --homedir /root/.gnupg --recv-keys D39DC0E3
 - rvm get stable
 - chmod a+x ./travis-build/*.sh
 
