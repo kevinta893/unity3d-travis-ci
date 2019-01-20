@@ -4,7 +4,7 @@
 # of available packages, where PLATFORM is `osx` or `win`
 UNITY_DOWNLOAD_CACHE="$(pwd)/unity_download_cache"
 UNITY_OSX_PACKAGE_URL="https://download.unity3d.com/download_unity/0a46ddfcfad4/MacEditorInstaller/Unity-2018.2.12f1.pkg"
-UNITY_WINDOWS_TARGET_PACKAGE_URL="http://download.unity3d.com/download_unity/0a46ddfcfad4/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2018.2.12f1.pkg"
+UNITY_WINDOWS_TARGET_PACKAGE_URL="https://download.unity3d.com/download_unity/0a46ddfcfad4/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2018.2.12f1.pkg"
 
 
 download() {
@@ -23,9 +23,9 @@ download() {
 
 install() {
 	PACKAGE_URL=$1
-	download "$PACKAGE_URL"
+	download $1
 
-	echo "Installing $PACKAGE_NAME"
+	echo "Installing `basename "$PACKAGE_URL"`"
 	sudo installer -dumplog -package $UNITY_DOWNLOAD_CACHE/`basename "$PACKAGE_URL"` -target /
 }
 
