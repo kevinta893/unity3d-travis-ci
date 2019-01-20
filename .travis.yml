@@ -4,7 +4,7 @@ rvm:
 - 2.2         #see before_install for getting RVM stable.
 
 env:
-- TRAVIS_TAG="2017.2.0f3" PROJECT_NAME="UnityExamplePackage" UNITY_PROJECT_PATH="UnityExample" DEPLOY_UNITYPACKAGE="path set in deploy script"
+- TRAVIS_TAG="Unity-2017.2.0f3" PROJECT_NAME="UnityExamplePackage" UNITY_PROJECT_PATH="UnityExample" DEPLOY_UNITYPACKAGE="path set in deploy script"
 
 
 cache:
