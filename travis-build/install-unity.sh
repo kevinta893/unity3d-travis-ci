@@ -10,7 +10,8 @@ UNITY_WINDOWS_TARGET_PACKAGE_URL="https://download.unity3d.com/download_unity/0a
 download() {
 
 	URL=$1
-
+	FILE=`basename "$URL"`
+	
 	#download package if it does not already exist in cache
 	if [ ! -e $UNITY_DOWNLOAD_CACHE/`basename "$URL"` ] ; then
 		echo "$FILE does not exist. Downloading from $URL: "
@@ -35,5 +36,5 @@ echo "Contents of Unity Download Cache:"
 ls $UNITY_DOWNLOAD_CACHE
 
 echo "Installing Unity..."
-install $UNITY_OSX_PACKAGE
-install $UNITY_WINDOWS_TARGET_PACKAGE
+install $UNITY_OSX_PACKAGE_URL
+install $UNITY_WINDOWS_TARGET_PACKAGE_URL
