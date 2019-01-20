@@ -15,6 +15,15 @@ Do configure the `.travis.yml` file to your needs:
 * TRAVIS_TAG - the GitHub release tag to deploy, if a release already exists with the same tag the release ZIP folder will be replaced
 * UNITY_PROJECT_NAME - the name of the release, the ZIP folder will be named ```$UNITY_PROJECT_NAME-v$TRAVIS_TAG```
 
+## Picking a Unity Version
+
+To choose a different Unity version, first visit the [Unity Download Archive](https://unity3d.com/get-unity/download/archive) and get the download URL for the following:
+
+* The main Unity Editor version
+* The respective Windows build support on Mac OS
+
+Then go to **travis-build\install_unity.sh** and add these URLs to the respective enviroment variables: `UNITY_OSX_PACKAGE_URL` and `UNITY_WINDOWS_TARGET_PACKAGE_URL`.
+
 ## Other notes
 
 It is possible to upgrade the version of Unity used in Travis-CI. See `install_unity.sh`. Not all Unity versions may be supported. 
