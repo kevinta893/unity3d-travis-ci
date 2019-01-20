@@ -4,7 +4,7 @@ rvm:
 - 2.2         #see before_install for getting RVM stable.
 
 env:
-- TRAVIS_TAG="1.0" PROJECT_NAME="UnityExamplePackage" UNITY_PROJECT_PATH="UnityExample" UNITY_DOWNLOAD_CACHE="$(pwd)/unity_download_cache" DEPLOY_UNITYPACKAGE="path set in deploy script"
+- TRAVIS_TAG="Deploy-2017.2.0f3" PROJECT_NAME="UnityExamplePackage" UNITY_PROJECT_PATH="UnityExample" DEPLOY_UNITYPACKAGE="path set in deploy script"
 
 
 cache:
@@ -13,7 +13,6 @@ cache:
 
     
 before_install:
-- rvm get stable
 - chmod a+x ./travis-build/*.sh
 
 install:
